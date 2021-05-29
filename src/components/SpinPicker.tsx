@@ -240,7 +240,7 @@ export class SpinPicker<T> extends React.Component<SpinPickerProps<T>, SpinPicke
     onDragScrollEnd = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
         event.persist();
         this.isDragScrolling = false;
-        this.autoScrollTimer && clearTimeout :any (this.autoScrollTimer);
+        this.autoScrollTimer && clearTimeout(this.autoScrollTimer);
         this.autoScrollTimer = setTimeout(
             () => {
                 if (!this.isMomentumScrolling && !this.isDragScrolling) {
